@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client4</title>
+</head>
+    <link rel="stylesheet" type="text/css" href="client4.css">
+    <title>chat box</title>
+    <script src="http://localhost:8002/socket.io/socket.io.js"></script>
+<body>
+    
+    <p id="Header" style="display: none;">welcome to the chat box</p>
+
+    <div id="name_InputContainer">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput">
+        <button onclick="submitName()">Submit</button>
+    </div>
+
+    <div id="chat_Container" style="display:none;">
+    <div id="message_container"></div>
+    <form id="send_container">
+        <input type="text" id="message_input">
+        <button type="submit" id="send_button">Send messages</button>
+    </form>
+    </div>
+    <script src="client4.js" type="text/javascript"></script>
+</body>
+</html>
